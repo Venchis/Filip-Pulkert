@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Filip Pulkert</title>
+        <meta name="Filip Pulkert" content="Filip Pulkert"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"></a>
+            <div class="box">
+                <img src="img/prf.png" alt="" class="box-img">
+            <ul>
+                <li><a href="#" class="active">Hl.Stránka</a></li>
+                <li><a href="cont/fp_z.pdf">Životopis</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="img/tr.png" id="tr">
+            <img src="img/mnt_b.png" id="mnt_b">
+            <h2 id="text">Filip Pulkert</h2>
+            <a href="#sec" id="btn">Informace</a>
+            <img src="img/mnt_f.png" id="mnt_f">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Informace</h2>
+        <p> <br><br>
+            <br><br>
+        </p>
+        </div>
+        <script>
+            let tr = document.getElementById('tr');
+            let mnt_b = document.getElementById('mnt_b');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mnt_f = document.getElementById('mnt_f');
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                tr.style.left = value * 0.25 + 'px';
+                mnt_f.style.top = value * 0.05 + 'px';
+                mnt_b.style.top = value * 0 + 'px';
+            })
+        </script>
+    </body>
+</html>
